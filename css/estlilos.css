@@ -1,0 +1,452 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding-top: 56px;
+    font-family: Arial, sans-serif;
+    color: white;
+    background-color: #000000;
+    overflow-x: hidden;
+}
+
+.navbar-nav .nav-item {
+    margin-right: 20px; 
+}
+.image-header {
+    background: url('../img/gojoportada.png') no-repeat center center/cover;
+    height: 100vh;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+.bungee-shade-regular {
+   font-family: "Bungee Shade", sans-serif;
+   font-weight: 400;
+   font-style: normal;
+}
+.bungee-font {
+    font-family: 'Bungee Shade', sans-serif;
+    font-weight: 400;
+    font-size: 77px;
+    margin-bottom: 1px;
+    text-align: center;
+}
+
+.bungee-font-p {
+    font-family: 'Bungee Shade', sans-serif;
+    font-weight: 400;
+    font-size: 50px !important;
+    margin-bottom: 1px;
+    color: white;
+}
+
+.image-header .content {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+}
+.image-header h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.image-header p {
+    font-size: 1.2rem;
+}
+
+/* Asegura que el contenido no se superponga al menú */
+h2 {
+    margin: 15px;
+    color: rgb(181, 47, 6);
+    font-size: 46px;
+}
+.bungee-font {
+    font-family: 'Bungee Shade', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+   
+    margin-bottom: 1px;
+}
+.h2-custom {
+    font-size: 20px;  
+    color: #ffffff;  
+    font-size: 58px;  
+    text-align: left;
+}
+.carousel-section {
+    background-image: url('../img/fondonegro.jpg'); 
+    background-size: cover; 
+    background-position: center; 
+    color: rgb(0, 0, 0);
+    padding: 23px;
+    text-align: center;
+    margin: 15px;
+}
+.carousel-container {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    max-width: 800px; 
+    margin: 0 auto;
+}
+.carousel-images {
+    display: flex;
+    animation: slide 12s infinite;
+}
+.carousel-slide {
+    min-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.carousel-box {
+    position: relative;
+    width: 80%;
+    height: 42vh; 
+}
+.carousel-box img {
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; 
+    border-radius: 10px;
+}
+.slide-text {
+    position: absolute;
+    bottom: 5px; 
+    left: 5px;   
+    color: white;
+    padding: 15px;
+    border-radius: 5px;
+    width: 80%;  
+    max-width: 300px;  
+    text-align: left;  
+    font-size: 2vw; 
+}
+.slide-text h3 {
+    font-size: 1.3rem;  
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.slide-text p {
+    font-size: 1rem;    
+    margin-bottom: 10px;
+}
+.read-btn {
+    background-color: #f82900; 
+    color: black;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    text-align: center;
+}
+
+.read-btn:hover {
+    background-color: #975537; 
+    color: white;
+}
+@keyframes slide {
+    0% { transform: translateX(0); }
+    14.2% { transform: translateX(-100%); } 
+    28.5% { transform: translateX(-200%); }
+    42.8% { transform: translateX(-300%); }
+    57.1% { transform: translateX(-400%); }
+    71.4% { transform: translateX(-500%); }
+    85.7% { transform: translateX(-600%); }
+    100% { transform: translateX(0); }
+}
+.carousel-images {
+    display: flex;
+    animation: slide 20s infinite; 
+}
+.catalog.h2-custom {
+    margin: 15px;
+    margin-top: 10px; 
+    padding-top: 10px; 
+    color: rgb(23, 247, 27);
+    font-size: 46px;
+  
+}
+.catalog {
+    padding: 30px 30px;
+    background-image: url('../img/fondonegro.jpg');
+    text-align: center;
+    padding: 32px;        
+    margin: 12px auto; 
+    width: 97%;  
+    min-height: 1360px; 
+    margin-bottom: 50px;
+}
+.catalog-section h2 {
+    font-size: 58px;      
+    color: #e80808;       
+    text-align: left;     
+    margin: 0;            
+    padding: 0;           
+    margin-left: 0;       
+    margin-top: 0;       
+    margin-bottom: 10px;  
+    font-weight: bold;    
+} 
+.catalog-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;  /* Espaciado entre los elementos */
+    justify-content: center;  /* Centra los ítems horizontalmente */
+}
+.catalog-item h3 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 10px 0; 
+    padding-left: 5px; 
+}
+.catalog-item {
+    width: calc(33.33% - 20px);  /* 3 ítems por fila con margen */
+    box-sizing: border-box;  
+    background-color: #000000; 
+    padding: 0; /* Elimina padding */
+    border-radius: 8px; /* Bordes redondeados */
+    width: 300px; /* Ancho fijo de cada item */
+    max-width: 300px;
+    text-align: left; /* Alinea el texto a la izquierda */
+    color: white;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3); /* Sombra para profundidad */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 50px; /* Espacio entre los items */
+    display: flex; /* Usamos flexbox */
+    flex-direction: column; /* Los elementos estarán en columna */
+}
+.catalog-item:hover {
+    transform: scale(1.05); /* Aumenta el tamaño al pasar el cursor */
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.5); /* Sombra más fuerte al hover */
+}
+.catalog-item img {
+    width: 100%; /* La imagen ocupa el 100% del ancho del contenedor */
+    height: 420px; /* Altura fija para uniformar las imágenes */
+    object-fit: cover; /* Ajusta la imagen sin distorsionarla */
+    border-radius: 8px 8px 0 0; /* Redondea solo la parte superior de la imagen */
+    margin-bottom: 10px; 
+    flex: 1 1 100%; /* Espacio entre la imagen y el contenido debajo */
+}
+.item-info {
+    display: flex; /* Usamos flexbox para que estén en una fila */
+    justify-content: space-between; /* Espaciamos el precio y el botón */
+    align-items: center; /* Alineamos verticalmente */
+    padding: 10px; /* Un poco de relleno */
+}
+.catalog-item h3 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 10px 0; /* Espacio alrededor del título */
+    text-align: left; /* Alinea el texto a la izquierda */
+    margin-left: 10px;
+}
+.catalog-item p {
+    font-size: 1.2rem;
+    color: #aaa;
+    margin: 0; /* Elimina el margen por defecto */
+    text-align: left; /* Alinea el texto a la izquierda */
+}
+.buy-btn {
+    display: inline-block;
+    text-decoration: none;
+    background-color: #fd4b5a; /* Botón rojo */
+    color: white;
+    font-size: 0.9rem;
+    padding: 8px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    text-align: center;
+}
+
+.buy-btn:hover {
+    background-color: #815a5e; /* Oscurece el rojo al pasar el cursor */
+}
+
+.contact-form-section {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #6d4747;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px; /* Añadir un margen inferior */
+}
+
+
+.contact-form-section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.contact-form-section form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form-section label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.contact-form-section input,
+.contact-form-section select,
+.contact-form-section textarea {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-form-section button {
+    padding: 10px;
+    background-color: #922a2a;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.contact-form-section button:hover {
+    background-color: #e10404;
+}
+.contactos-container {
+    display: flex;
+    gap: 20px;
+    background-color:  #6d4747; /* Fondo celeste del contenedor */
+    padding: 40px; /* Espacio interno dentro del contenedor */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    color: black; /* Color de texto en negro */
+    font-family: Arial, sans-serif; /* Fuente legible */
+    margin: 60px; /* Margen externo para alejarlo de los bordes de la pantalla */
+    max-width: 1500px; /* Limita el ancho del contenedor */
+    padding-left: 40px; /* Añadir espacio extra a la izquierda */
+    padding-right: 40px; /* Añadir espacio extra a la derecha */
+}
+.contacto-item {
+    flex: 1;
+    padding: 20px ;
+    border: 1px solid #000000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: center;
+    background-color: #aba4a4; /* Fondo blanco para los items */
+    color: black; /* Asegura que el texto dentro de cada item sea negro */
+}
+  
+  .contacto-item h3 {
+    margin-bottom: 10px;
+  }
+  
+  .contacto-item p {
+    margin: 5px 0;
+  }
+footer {
+    background-color: #5a3d3d;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+  }
+  
+  .social-icons img {
+    width: 30px;
+    height: auto;
+    margin: 0 10px;
+  }
+  /* Medios de comunicación */
+
+/* Para tabletas y pantallas medianas de laptop (máximo 1280px) */
+@media (max-width: 1280px) {
+    .catalog {
+        width: calc(50% - 20px); /* 2 productos por fila */
+        max-width: 50%; /* Asegura que los productos no se estiren más allá del 50% del ancho */
+    }
+    .catalog-item {
+        width: calc(50% - 20px); /* 2 productos por fila */
+        max-width: 50%; /* Asegura que los productos no se estiren más allá del 50% del ancho */
+    }
+    .catalog-list {
+        gap: 30px; /* Reducir el espacio entre los productos */
+    }
+
+    .carousel-box img {
+        height: 35vh; /* Ajustar la altura de las imágenes en el carousel */
+    }
+
+    .contactos-container {
+        flex-direction: column; /* Cambiar a columna para los ítems de contacto */
+    }
+
+    .contacto-item {
+        flex: 1 1 100%; /* Ajuste en los ítems de contacto */
+        margin-bottom: 20px;
+    }
+}
+
+/* Para pantallas más pequeñas (máximo 768px) */
+@media (max-width: 768px) {
+    .catalog {
+        width: calc(50% - 20px);
+        width: 100%; /* 1 producto por fila */
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .catalog-list {
+        gap: 20px;
+    }
+
+    .carousel-box img {
+        height: 30vh;
+    }
+
+    .contactos-container {
+        flex-direction: column;
+        margin: 20px;
+        padding: 20px;
+    }
+
+    .contacto-item {
+        margin-bottom: 15px;
+    }
+
+    footer {
+        padding: 15px;
+    }
+}
+
+/* Para dispositivos móviles muy pequeños (máximo 480px) */
+@media (max-width: 480px) {
+    .bungee-font {
+        font-size: 40px;
+    }
+
+    .catalog-item img {
+        height: 300px;
+    }
+
+    .catalog-item h3 {
+        font-size: 1.1rem;
+    }
+
+    .item-info {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .buy-btn {
+        font-size: 0.8rem;
+    }
+}
